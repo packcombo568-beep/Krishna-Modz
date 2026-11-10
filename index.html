@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIZY MODS - Official Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- FontAwesome for original app icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        body {
+            background: radial-gradient(circle at top, #0d1e3d 0%, #050a14 100%);
+        }
+        .portal-card {
+            background: linear-gradient(135deg, rgba(16, 37, 76, 0.4) 0%, rgba(8, 17, 36, 0.5) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            backdrop-filter: blur(16px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .portal-card:hover {
+            border-color: rgba(59, 130, 246, 0.7);
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.25);
+            transform: translateY(-2px);
+        }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        }
+        .neon-pill {
+            box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+        }
+    </style>
+</head>
+<body class="text-gray-200 min-h-screen flex flex-col items-center justify-between p-6 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Glow Effect Decorative Element -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-72 bg-blue-500/10 blur-[120px] pointer-events-none rounded-full"></div>
+
+    <!-- Main Container -->
+    <div class="w-full max-w-md text-center flex flex-col items-center relative z-10 my-auto">
+        
+        <!-- Logo / Avatar Wrapper -->
+        <div class="w-36 h-36 rounded-full border-2 border-blue-500/40 flex items-center justify-center mb-6 overflow-hidden bg-[#091124] shadow-2xl shadow-blue-500/10">
+            <!-- Replace URL with your actual hosted logo path -->
+            <img src="logo.png" alt="NOIZY MODS Logo" class="w-full h-full object-cover error-fallback" onerror="this.src='https://placehold.co'">
+        </div>
+
+        <!-- Portal Header Text -->
+        <h1 class="text-3xl font-black uppercase tracking-widest text-white glow-text">NOIZY MODS</h1>
+        <p class="text-xs font-bold tracking-[0.25em] text-blue-400 mt-1.5 uppercase opacity-90">Official Portal</p>
+
+        <!-- Dynamic Member Status Indicator -->
+        <div class="mt-5 inline-flex items-center gap-2.5 bg-blue-950/40 border border-blue-500/20 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide neon-pill">
+            <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400"></span>
+            </span>
+            <span class="text-cyan-400 font-bold">+13K Active Members</span>
+        </div>
+
+        <!-- Links Subheading Alignment -->
+        <p class="text-xs uppercase font-extrabold tracking-[0.2em] text-gray-400 mt-10 mb-5 text-left w-full pl-2 border-l-2 border-blue-500/50">Official Channels</p>
+
+        <!-- Interactive Hub Directory -->
+        <div class="w-full space-y-4">
+
+            <!-- Link Row 1: WhatsApp Primary -->
+            <a href="https://wa.me" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-emerald-400 bg-emerald-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-emerald-500/20">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">Official WhatsApp</span>
+                        <span class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">CONTACT OWNER</span>
+                        <span class="block text-xs text-gray-400 mt-0.5">DM to Buy Cheap Panels</span>
+                    </div>
+                </div>
+                <div class="text-blue-400 text-xl font-bold transition-transform group-hover:translate-x-1.5">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- Link Row 2: WhatsApp Community Group -->
+            <a href="https://whatsapp.com" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-emerald-400 bg-emerald-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-emerald-500/20">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">WhatsApp Channel</span>
+                        <span class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">WHATSAPP CHANNEL</span>
+                        <span class="block text-xs text-gray-400 mt-0.5">Join For Free Root & Non-Root Panels</span>
+                    </div>
+                </div>
+                <div class="text-blue-400 text-xl font-bold transition-transform group-hover:translate-x-1.5">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- Link Row 3: TikTok Media -->
+            <a href="https://tiktok.com" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-pink-500 bg-pink-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-pink-500/20">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">TikTok Community</span>
+                        <span class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">OFFICIAL TIKTOK</span>
+                        <span class="block text-xs text-gray-400 mt-0.5">Follow Me.</span>
+                    </div>
+                </div>
+                <div class="text-blue-400 text-xl font-bold transition-transform group-hover:translate-x-1.5">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- Link Row 4: WhatsApp Feedback -->
+            <a href="https://whatsapp.com" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-emerald-400 bg-emerald-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-emerald-500/20">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">Feedback Matrix</span>
+                        <span class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">FEEDBACK CHANNEL</span>
+                        <span class="block text-xs text-gray-400 mt-0.5">Join Feedback Channel.</span>
+                    </div>
+                </div>
+                <div class="text-blue-400 text-xl font-bold transition-transform group-hover:translate-x-1.5">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- Link Row 5: External Game Download -->
+            <a href="https://google.com" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-amber-500 bg-amber-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-amber-500/20">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">Action Client</span>
+                        <span class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">Download Free Fire</span>
+                        <span class="block text-xs text-gray-400 mt-0.5">Download the game.</span>
+                    </div>
+                </div>
+                <div class="text-blue-400 text-xl font-bold transition-transform group-hover:translate-x-1.5">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- Link Row 6: Telegram Community Group -->
+            <a href="https://t.me" target="_blank" class="portal-card flex items-center justify-between p-5 rounded-2xl w-full group">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="text-2xl text-sky-400 bg-sky-500/10 w-12 h-12 flex items-center justify-center rounded-xl border border-sky-500/20">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-blue-400">Telegram Main Hub</span>
+                                                                                                                            
